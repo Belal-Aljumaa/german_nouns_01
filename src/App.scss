@@ -5,6 +5,36 @@ body {
 	padding: 0 1rem;
 
 	h1 {
-		color: rgb(209, 168, 85);
+		color: orange;
+	}
+
+	.nouns {
+		.noun {
+			background-color: rgb(11, 77, 11);
+			margin-bottom: 1rem;
+			padding: 0.6rem;
+			width: 17rem;
+
+			.front {
+				color: rgb(230, 213, 213);
+				cursor: pointer;
+				&:hover {
+					font-weight: bold;
+				}
+			}
+
+			.back {
+				margin-top: 0.5rem;
+				background-color: rgb(16, 61, 16);
+				padding: 0.3rem;
+
+				.singular {
+					color: yellow;
+				}
+				.plural {
+					color: rgb(175, 47, 0);
+				}
+			}
+		}
 	}
 }
