@@ -3,36 +3,47 @@ body {
 	color: #ccc;
 	font-family: sans-serif;
 	padding: 0 1rem;
+	user-select: none;
 
 	h1 {
 		color: orange;
 	}
 
 	.nouns {
-		.noun {
-			background-color: rgb(11, 77, 11);
-			margin-bottom: 1rem;
-			padding: 0.6rem;
-			width: 17rem;
+		.content {
+			width: 20rem;
+			margin-bottom: 1rem; 
 
-			.front {
-				color: rgb(230, 213, 213);
+			.card {
+				border-radius: 5px;
+				border: 1px solid white;
+				background-color: #0b4d0b;
+				overflow: hidden;
 				cursor: pointer;
-				&:hover {
-					font-weight: bold;
-				}
-			}
 
-			.back {
-				margin-top: 0.5rem;
-				background-color: rgb(16, 61, 16);
-				padding: 0.3rem;
-
-				.singular {
-					color: yellow;
+				.card-front,
+				.card-back {
+					font-size: 24px;
+					color: white;
+					padding-left: 15px;
 				}
-				.plural {
-					color: rgb(175, 47, 0);
+
+				.card-front {
+					display: flex;
+					justify-content: space-between;
+				}
+
+				.card-back {
+					margin-top: 0.8rem;
+					background-color: #103d10;
+					padding: 15px;
+					.singular {
+						color: yellow;
+					}
+
+					.plural {
+						color: #d03700;
+					}
 				}
 			}
 		}
